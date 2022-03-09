@@ -1,0 +1,6 @@
+D:\DOT NET Training\Sample Assessment\ADOSamle\ObjectClass\bin\Debug\ObjectClass.dll
+D:\DOT NET Training\Sample Assessment\ADOSamle\ObjectClass\bin\Debug\ObjectClass.pdb
+D:\DOT NET Training\Sample Assessment\ADOSamle\ObjectClass\obj\Debug\ObjectClass.csproj.AssemblyReference.cache
+D:\DOT NET Training\Sample Assessment\ADOSamle\ObjectClass\obj\Debug\ObjectClass.csproj.CoreCompileInputs.cache
+D:\DOT NET Training\Sample Assessment\ADOSamle\ObjectClass\obj\Debug\ObjectClass.dll
+D:\DOT NET Training\Sample Assessment\ADOSamle\ObjectClass\obj\Debug\ObjectClass.pdb
