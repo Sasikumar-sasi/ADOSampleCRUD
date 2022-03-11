@@ -44,6 +44,8 @@
             this.txtRollNumber = new System.Windows.Forms.TextBox();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnSearch = new System.Windows.Forms.Button();
+            this.lblCount = new System.Windows.Forms.Label();
+            this.lblCountValue = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvShowDetailsBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -143,9 +145,9 @@
             // dgvShowDetailsBox
             // 
             this.dgvShowDetailsBox.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvShowDetailsBox.Location = new System.Drawing.Point(4, 320);
+            this.dgvShowDetailsBox.Location = new System.Drawing.Point(4, 336);
             this.dgvShowDetailsBox.Name = "dgvShowDetailsBox";
-            this.dgvShowDetailsBox.Size = new System.Drawing.Size(723, 252);
+            this.dgvShowDetailsBox.Size = new System.Drawing.Size(871, 252);
             this.dgvShowDetailsBox.TabIndex = 9;
             // 
             // btnDelete
@@ -196,12 +198,32 @@
             this.btnSearch.UseVisualStyleBackColor = true;
             this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
+            // lblCount
+            // 
+            this.lblCount.AutoSize = true;
+            this.lblCount.Location = new System.Drawing.Point(36, 307);
+            this.lblCount.Name = "lblCount";
+            this.lblCount.Size = new System.Drawing.Size(109, 17);
+            this.lblCount.TabIndex = 17;
+            this.lblCount.Text = "Total Students: ";
+            // 
+            // lblCountValue
+            // 
+            this.lblCountValue.AutoSize = true;
+            this.lblCountValue.Location = new System.Drawing.Point(151, 307);
+            this.lblCountValue.Name = "lblCountValue";
+            this.lblCountValue.Size = new System.Drawing.Size(16, 17);
+            this.lblCountValue.TabIndex = 18;
+            this.lblCountValue.Text = "0";
+            // 
             // frmStudent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleGreen;
-            this.ClientSize = new System.Drawing.Size(739, 600);
+            this.ClientSize = new System.Drawing.Size(887, 600);
+            this.Controls.Add(this.lblCountValue);
+            this.Controls.Add(this.lblCount);
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.txtRollNumber);
@@ -246,6 +268,8 @@
         private System.Windows.Forms.TextBox txtRollNumber;
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Button btnSearch;
+        private System.Windows.Forms.Label lblCount;
+        private System.Windows.Forms.Label lblCountValue;
     }
 }
 

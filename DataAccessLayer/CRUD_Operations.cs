@@ -138,5 +138,18 @@ namespace DataAccessLayer
                 return RowAffected;
             }
         }
+
+        public static int CountStudent()
+        {
+            using (SqlConnection con = new SqlConnection(ConnectionStringInformation))
+            {
+                con.Open();
+                SqlCommand cmd;
+                cmd = new SqlCommand("select count(RollNumber) from student", con);
+                Object c = cmd.ExecuteScalar();
+                int count = Convert.ToInt32(c);
+                return count;
+            }
+        }
     }
 }

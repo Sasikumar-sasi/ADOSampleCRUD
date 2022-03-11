@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 //using 
 
@@ -89,6 +82,11 @@ namespace StudentManagement
         private void ShowAllStudent()
         {
             dgvShowDetailsBox.DataSource= CRUD_Operations.GetAllStudent();
+            dgvShowDetailsBox.Columns[0].Width = 90;
+            dgvShowDetailsBox.Columns[1].Width = 200;
+            dgvShowDetailsBox.Columns[2].Width = 200;
+            dgvShowDetailsBox.Columns[3].Width = 200;
+            lblCountValue.Text = CRUD_Operations.CountStudent().ToString();
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
